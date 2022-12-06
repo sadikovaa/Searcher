@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.sadikovaa.searcher.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.sadikovaa.searcher.MyBundle
 
 class MyApplicationService {
 
