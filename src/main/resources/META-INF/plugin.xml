@@ -5,14 +5,12 @@
     <vendor>sadikovaa</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.sadikovaa.searcher.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.sadikovaa.searcher.services.MyProjectService"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.sadikovaa.searcher.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    <actions>
+        <action id="com.alsu.plugin.SearchAction" class="com.alsu.plugin.SearchAction" text="Search in google">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl G"/>
+        </action>
+        <action id="com.alsu.plugin.TranslateAction" class="com.alsu.plugin.TranslateAction" text="Translate to Russian">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt R"/>
+        </action>
+    </actions>
 </idea-plugin>

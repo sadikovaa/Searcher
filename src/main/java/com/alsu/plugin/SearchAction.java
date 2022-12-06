@@ -17,7 +17,7 @@ public class SearchAction extends AnAction {
 
         if (query != null) {
             query = query.replace(' ', '+');
-            BrowserUtil.browse("https://www.google.ru/search?q=" + query);
+            BrowserUtil.browse("https://yandex.ru/search/?text=" + query);
         }
 
     }
